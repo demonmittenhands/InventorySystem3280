@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 
 namespace RecreationOutlet
 {
+    /// dummy comment
     /// <summary>
     /// Class to interact with access database
     /// </summary>
