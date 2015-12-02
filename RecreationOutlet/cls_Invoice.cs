@@ -248,7 +248,7 @@ namespace RecreationOutlet
                 productList.Add(prod);
 
                 //to notify the databinding of a change
-                PropertyChanged(this, new PropertyChangedEventArgs("Products"));
+                PropertyChanged(this, new PropertyChangedEventArgs("TotalCost"));
             }
             catch (Exception ex)
             {
@@ -293,6 +293,7 @@ namespace RecreationOutlet
                     if (item.Equals(prod))
                     {
                         productList.Remove(item);
+                        PropertyChanged(this, new PropertyChangedEventArgs("TotalCost"));
                         return;
                     }
                 }
